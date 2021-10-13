@@ -21,22 +21,28 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.blogger.com/about/?bpli=1')
 
-WebUI.click(findTestObject('Object Repository/Stats/Page_Blogger.com - Create a unique and beau_ce24a0/span_Sign in'))
+WebUI.click(findTestObject('Object Repository/Layout/Page_Blogger.com - Create a unique and beau_ce24a0/span_Sign in'))
 
-WebUI.setText(findTestObject('Object Repository/Stats/Page_Blogger/input_to continue to Blogger_identifier'), 'swe2005demo')
+WebUI.setText(findTestObject('Object Repository/Layout/Page_Blogger/input_to continue to Blogger_identifier'), 'swe2005demo')
 
-WebUI.sendKeys(findTestObject('Object Repository/Stats/Page_Blogger/input_to continue to Blogger_identifier'), Keys.chord(
+WebUI.sendKeys(findTestObject('Object Repository/Layout/Page_Blogger/input_to continue to Blogger_identifier'), Keys.chord(
         Keys.ENTER))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Stats/Page_Blogger/input_Too many failed attempts_password'), '/gGZGwewcf4G9e0aZ5780SSpvR1Vy/w9')
+WebUI.setEncryptedText(findTestObject('Object Repository/Layout/Page_Blogger/input_Too many failed attempts_password'), 
+    '/gGZGwewcf4G9e0aZ5780SSpvR1Vy/w9')
 
-WebUI.sendKeys(findTestObject('Object Repository/Stats/Page_Blogger/input_Too many failed attempts_password'), Keys.chord(
+WebUI.sendKeys(findTestObject('Object Repository/Layout/Page_Blogger/input_Too many failed attempts_password'), Keys.chord(
         Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Stats/Page_Blogger Posts/div_Stats'))
+WebUI.click(findTestObject('Object Repository/Layout/Page_Blogger Posts/div_Layout'))
 
-WebUI.click(findTestObject('Object Repository/Stats/Page_Blogger Stats/span_Last 7 days'))
+WebUI.click(findTestObject('Object Repository/Layout/Page_Blogger Layout/a_Add a Gadget'))
 
-WebUI.click(findTestObject('Object Repository/Stats/Page_Blogger Stats/span_Last 24 hours'))
+WebUI.click(findTestObject('Object Repository/Layout/Page_Blogger Layout/span_Blog Search'))
+
+WebUI.click(findTestObject('Object Repository/Layout/Page_Blogger Layout/span_Save'))
+
+WebUI.click(findTestObject('Object Repository/Layout/Page_Blogger Layout/span_save (1)'))
 
 WebUI.closeBrowser()
+
